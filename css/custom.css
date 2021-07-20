@@ -1,0 +1,198 @@
+/*html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }*/
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+:root {
+	--content-width: 100vw;
+    --text-opacity: 0;
+}
+
+@media screen and (min-width: 42em) {
+	:root {
+		--content-width: 42em;
+	}
+}
+
+.rowContainer {
+    display:flex;
+    flex-direction: row;
+    height:100vh;
+    width:100%;
+    flex:1;
+    overflow:hidden;
+    margin: 0;
+}
+
+.contentDiagonal {
+    max-width: 500em;
+    margin: 0 auto;
+    flex:auto;
+    position: relative;
+    padding-left: 10vh;
+    overflow:hidden;
+}
+
+.leftBorder {
+    margin-left: -10vh;
+}
+
+.leftMargin {
+    padding-left: 5vh;
+}
+
+.rightBorder {
+    margin-right: -50ev;
+    clip-path: content-box;
+}
+
+.bg {
+    background-image: linear-gradient(45deg, #0c071a, #020711); 
+    overflow:hidden;
+    max-width:100vw;
+    max-height: 100vh;
+    margin: 0;
+}
+
+.bgTall {
+    background-image: linear-gradient(45deg, #0c071a, #020711); 
+    max-width:100vw;
+    margin: 0;
+}
+
+.fullscreen {
+    height:100vh;
+    width:100vw;
+}
+
+.mainHeader {
+    margin: 0 auto;
+    font-family: 'Manrope', sans-serif;
+    color:aliceblue;
+    padding-left: --skew-padding;
+    white-space: nowrap;
+    transform: skewX(3deg);
+    user-select: none;
+}
+
+.mainParagraph {
+    margin: 0 auto;
+    margin-top:25px;
+    padding:25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    color:aliceblue;
+    transition: all 0.45s ease;
+    opacity: var(--text-opacity);
+    width:20vw;
+    user-select: none;
+    text-shadow: 0 1px 0 black;
+    transform: skewX(3deg);
+}
+
+.blur {
+    backdrop-filter: blur(12px);
+    border-radius: 5px;
+}
+
+.lightBlur {
+    backdrop-filter: blur(12px) brightness(150%) contrast(70%);
+    border-radius: 5px;
+}
+
+.darkBlur {
+    backdrop-filter: blur(12px) brightness(80%) contrast(100%);
+    border-radius: 5px;
+}
+
+.mainParagraph:before {
+    filter: blur(12px);
+}
+
+.darkText {
+    color:#101541
+}
+
+
+
+/* angled div */
+.slanted-div {
+    position: relative;
+    padding: 200px 0;
+    overflow:hidden;
+    z-index: 1;
+    transition: all 0.45s ease;
+    flex:1;
+    height:100vh; 
+    transform: skewX(-3deg);
+    backface-visibility: hidden;
+    outline: 2px solid black;
+  }
+
+/* change size on focus */
+.slanted-div:focus {
+    flex:2;
+    --text-opacity: 100%;
+}
+
+  /* displays the content inside, as these settings in the parent breaks the effect */
+  .slanted-div div {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5;
+  }
+
+  .rightEdge:before {
+    margin-right:50;
+  }
+
+.imageRS {
+    position:absolute;
+    transform: skewX(3deg);
+    left:-50px;
+    top:0;
+    overflow:visible;
+    backface-visibility: hidden;
+    min-height:1000px;
+    min-width:500px;
+}
+
+.imageSizeTall {
+    height:120vh;
+}
+
+.imageSizeWide {
+    height:100vh;
+}
+
+.gridWrapper {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 50px 50px;
+}
+
+.flexRow {
+    display:flex;
+    flex-direction: row;
+}
+
+.textParagraph {
+    flex:1;
+    margin: 0 auto;
+    margin-top:25px;
+    padding:25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    color:aliceblue;
+    opacity:100%;
+    width:40vw;
+    user-select: none;
+
+}
+
+
