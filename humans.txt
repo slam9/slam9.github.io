@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Juha Salminen Dev @slam_nine
 
 # THANKS
 
-    <name>
+    HTML5 Boilerplate team https://html5boilerplate.com/
 
 # TECHNOLOGY COLOPHON
 
