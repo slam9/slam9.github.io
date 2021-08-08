@@ -42,12 +42,20 @@
     <div>
       <div class="flexRow" style="margin: auto; padding:50px; flex:1">
 
-        <div style=" flex:1;">
+        <div style=" flex:2;">
 
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Oyfk3xBSOR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <style>
+            .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+            .embed-container iframe, 
+            .embed-container object, 
+            .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+            </style>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/Oyfk3xBSOR4' frameborder='0' allowfullscreen>
+            </iframe>
+          </div>
         </div>
        
-        <div style=" flex:2; margin-left: 25px;">
+        <div style=" flex:1; margin-left: 25px;">
           <p class="textParagraph lightText" style="flex:1">
             Demo Reel 2020
           </p>
@@ -61,17 +69,25 @@
 
       </div>
     </div>
-
+    
 
     <div>
       <div class="flexRow" style="margin: auto; padding:50px; flex:1">
 
-        <div style=" flex:1;">
+        <div style=" flex:2;">
 
-          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Lvy4KVEmgDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+          <style>
+            .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } 
+            .embed-container iframe, 
+            .embed-container object, 
+            .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+            </style>
+            <div class='embed-container'><iframe src='https://www.youtube.com/embed/Lvy4KVEmgDQ' frameborder='0' allowfullscreen>
+            </iframe>        
+          </div>
         </div>
        
-        <div style=" flex:2; margin:auto; margin-left: 50px;">
+        <div style=" flex:1; margin:auto; margin-left: 25px;">
           <p class="textParagraph lightText" style="flex:1">
             Monolith
           </p>
