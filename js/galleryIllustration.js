@@ -6,12 +6,12 @@ const selectedIndex = null;
 
 imageIndexes.forEach( i => {
     const image = document.createElement('img');
-    image.src = `img/3d_thumbnail/image-${i}.jpg`;
+    image.src = `img/illustration_thumbnail/image-${i}.jpg`;
     image.alt = `Gallery image ${i}`;
     image.classList.add('galleryImg');
 
     image.addEventListener( 'click', () => {
-        selectedImage.src = `img/3d/image-${i}.jpg`; 
+        selectedImage.src = `img/illustration/image-${i}.jpg`; 
         selectedImage.alt = `Gallery image ${i}`;
         popup.style.transform =  'translateY(0)';
     })
