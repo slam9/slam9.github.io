@@ -13,7 +13,9 @@ imageIndexes.forEach( i => {
     image.addEventListener( 'click', () => {
         selectedImage.src = `img/illustration/image-${i}.jpg`; 
         selectedImage.alt = `Gallery image ${i}`;
-        popup.style.transform =  'translateY(0)';
+        selectedImage.onload = function() {
+            popup.style.transform =  'translateY(0)';
+        }
     })
 
     gallery.appendChild(image);

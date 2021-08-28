@@ -164,11 +164,16 @@
     font-size: 1.5em;
     line-height: 1.5;
   }
-
   .rightEdge:before {
     margin-right:50;
   }
 
+  .toggleableLink{
+      visibility: hidden;
+  }
+  .slanted-div:focus .toggleableLink{
+    visibility: visible;
+}
 .imageRS {
     position:absolute;
     transform: skewX(3deg);
